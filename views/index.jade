@@ -1,0 +1,101 @@
+extends layout
+
+block content
+    #aboutimg.container(style='width:100%;')
+      #myCarousel.carousel.slide(data-ride='carousel', style='width:100%;')
+        //- Indicators
+        ol.carousel-indicators
+          li.active(data-target='#myCarousel', data-slide-to='0')
+          li(data-target='#myCarousel', data-slide-to='1')
+          li(data-target='#myCarousel', data-slide-to='2')
+          li(data-target='#myCarousel', data-slide-to='3')
+          li(data-target='#myCarousel', data-slide-to='4')
+          li(data-target='#myCarousel', data-slide-to='5')
+          li(data-target='#myCarousel', data-slide-to='6')
+        //- Wrapper for slides
+        #carosolimg.carousel-inner
+          .item.active
+            img(src='images/About/a1.jpg', alt='image1')
+          .item
+            img(src='images/About/a2.jpg', alt='images1')
+          .item
+            img(src='images/About/a9.jpg', alt='image1')
+          .item
+            img(src='images/About/a4.jpg', alt='image1')
+          .item
+            img(src='images/About/a5.jpg', alt='image1')
+        //- Left and right controls
+        a.left.carousel-control(href='#myCarousel', data-slide='prev')
+          span.glyphicon.glyphicon-chevron-left
+          span.sr-only Previous
+        a.right.carousel-control(href='#myCarousel', data-slide='next')
+          span.glyphicon.glyphicon-chevron-right
+          span.sr-only Next
+    hr
+    
+    //- About Hospital
+    .container-fluid.text-center
+      .row.content
+        #aboutdiv1.col-sm-8.text-left
+          h1#class1h1 About Medicare
+          p
+            | Medicare Centres, Medicare Pharmacies and Biosytech Referral Laboratory fall under the umbrella of Medicare Group. Established in 1995, Medicare has steadily grown to be recognized as a reputed health care group in Canada and also one of the best multispeciality clinic in Toronto
+          hr
+          h3 Overview
+          p
+            | By bringing together most of the commonly sought after primary and specialty health care services, in an outpatient setting, Medicare provides a coordinated healthcare experience. From a simple consultation with the family doctor to complete health evaluations or even a quick skin treatment to cosmetic dentistry, Medicare provides all of these under one roof. Healthcare packages for individuals to corporate packages, travel medicine to aviation medical checks for pilots, Medicare is a destination for varied healthcare services. Our services are supported by a world class laboratory, diagnostic and pharmacy facilities.
+          h3 Our Mission
+          p
+            | We are here to provide health care services that exceed our clients’expectations.
+          h3 Our Values
+          p
+            b Excellence:
+            |  We are committed to creating and adhering to high standards of excellence, and welcome being held responsible for the outcome and quality of our work. To ensure we consistently meet these standards, we support systems of feedback and response from our patients, visitors and staff. This will help us fulfill our mission to exceed our clients’ expectations.
+            br
+            br
+            b Integrity:
+            |  We make our commitments based on well-informed and mindful decisions and honor those promises with transparency in all that we do. We hold ourselves to the highest ethical standards to be worthy of the trust our clients’ place in us.
+            br
+            br
+            b Innovation:
+            |  We explore, we innovate and we create an environment that supports this expression to continually improve the outcome of our work.
+          hr
+        #aboutdiv2.col-sm-4
+          img(src='images/About/a10.jpg', alt='image1')
+    //- Contact
+    .container-fluid.text-center
+      .row.content
+        #contactdiv1.col-sm-6.text-left
+          h1 Contact Us
+          h4
+            | 3050 Lawrence Ave E
+            br
+            |         Toronto, Ontario L3S 4N8
+            br
+            |         Tel.: 905-123-3331
+            br
+            |         Email: info@medicare.com
+          hr
+          form.form-horizontal(action='', style='align-items: left;')
+            .form-group
+              label.control-label.col-sm-4(for='email') Name:
+              .col-sm-8
+                input#email.form-control(type='text', placeholder='Your Name', name='email')
+            .form-group
+              label.control-label.col-sm-4(for='email') Phone Number:
+              .col-sm-8
+                input#email.form-control(type='number', placeholder='Your Phone Number', name='email')
+            .form-group
+              label.control-label.col-sm-4(for='email') Email:
+              .col-sm-8
+                input#email.form-control(type='email', placeholder='Enter email', name='email')
+            .form-group
+              label.control-label.col-sm-4(for='email') Your Message:
+              .col-sm-8
+                textarea#comment.form-control(rows='5', placeholder='Your Message')
+            .form-group
+              #cosubmit.col-sm-offset-2.col-sm-10
+                button.btn.btn-primary(type='submit') Submit
+        #map1.col-sm-6
+          | map
+    br  

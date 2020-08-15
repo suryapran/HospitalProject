@@ -1,0 +1,146 @@
+doctype html
+html(lang='en')
+  head
+    title About Us
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js')
+    // social media
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+    // my tag
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='/javascripts/script.js')
+  body
+    // NAV BAR
+    nav.navbar.navbar-inverse
+      .container-fluid
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#myNavbar')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+        #myNavbar.collapse.navbar-collapse
+          nav.fill
+            ul#navULitem.nav.navbar-nav
+              li
+                img(src='images/logo.png', alt='')
+              // <li id="items1"><a href="index.html"><i class="fa fa-caret-down"></i></a></li>
+              li#items1.dropdown
+                a.dropdown-toggle(href='/', data-toggle='dropdown')
+                  | About Us
+                  span.caret
+                ul#dropdwn.dropdown-menu
+                  li
+                    a(href='/', target='_self') Specialities
+                  li
+                    a#clinicdpt(target='_self') Clinic Department
+              li#items
+                a(href='/appointment') Appointment
+              li#items
+                a(href='/phistory') PatientHistory
+              li#items
+                a(href='/consult') Consultation
+              li#items
+                a(href='/logout') Logout
+              //- li#items
+              //-   a(href='/login', data-toggle='dropdown') Login&Logout
+              //-     span.caret
+              //-     ul#dropdwn.dropdown-menu
+              //-      li
+              //-       a(href='/logout', target='_self') Logout
+    //- The Popup Window
+    #departments.modal
+      //- Modal content
+      .container-fluid.text-center
+        #topupdept.row.content
+          #deptlist.col-sm-3.text-left
+            ul
+              li
+                a(href='/pediatric') Pediatrics
+              li
+                a Cancer Care Center
+              li
+                a Ophtalmology
+              li
+                a General Surgery
+              li
+                a Neurology
+          #deptlist.col-sm-3.text-left
+            ul
+              li
+                a Audiology
+              li
+                a Brest Care Clinic
+              li
+                a ENT
+              li
+                a Psychiatry
+              li
+                a Oncology
+          #deptlist.col-sm-3.text-left
+            ul
+              li
+                a Anesthesiology
+              li
+                a Diabets
+              li
+                a Ophtalmology
+              li
+                a Urology
+              li(style='list-style:unset;color: rgb(178, 193, 194);')
+          #deptlist.col-sm-3.text-left
+            img(src='images/About/phone.png', alt='image1', width='120px', height='120px')
+    block content        
+    // Quick Links
+    #quicklinks.container-fluid.text-center
+      .row.content
+        .col-sm-3.text-left
+          h4 Quick Links
+          ul#qlist
+            li
+              a(href='') About Medicare
+            li
+              a(href='') Specialities
+            li
+              a(href='') Our Departments
+            li
+              a(href='') Health Packages
+            li
+              a(href='') Our Patients
+        .col-sm-3.text-left
+          h4 Quick Links
+          ul#qlist
+            li
+              a(href='') Find a Doctor
+            li
+              a(href='') Book Appointment
+            li
+              a(href='') Feed Back
+            li
+              a(href='')  Contact Us
+        #certificate.col-sm-3
+          h4 Certification
+          img(src='images/certificate.webp', alt='Image')
+        #media.col-sm-3
+          h4 Connect with Us
+          a.fa.fa-facebook(href='#')
+          a.fa.fa-twitter(href='#')
+          a.fa.fa-linkedin(href='#')
+          a.fa.fa-youtube(href='#')
+    // Foooter
+    footer.container-fluid.text-center
+      p
+        | ©   Medicare Hospital  2020  Created By : 
+        a(href='https://www.linkedin.com/in/surya-v-krishnan-0697b9179', target='_blank') SuryaGayathri
+    script.
+      var map1;
+      function initMap() {
+      map1 = new google.maps.Map(document.getElementById('map1'), {
+      center: {lat: -34.397, lng: 150.644},
+      zoom: 8
+      });
+      }
+    script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDP469MQIkaxN5R9VeY1fgraFzS7HudWCo&callback=initMap', async='', defer='')
+

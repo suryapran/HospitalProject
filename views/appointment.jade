@@ -1,0 +1,136 @@
+extends layout
+
+block content
+    // Hospital image
+    .container(style='width:100%;')
+    #apointimg
+         img(src='images/Other/ap2.jpg', alt='image1')
+    // Patient and contact information div
+    #detailstop
+        h1.text-center Book an Appointment 
+    #details.container-fluid
+     .row.content
+      #userdetails.col-sm-6(style='background-color: rgb(223, 221, 235);')
+        h4
+            u Patient information
+     
+                             
+        form#usertable1.well.form-horizontal(action='/editsave', method='POST' target='_self')
+                   
+            table#usertable1.table.table-bordered
+                    tbody
+                        tr
+                            th Hospital ID
+                            td 
+                             p#hid1 #{Hid}
+
+                        tr
+                            th First Name
+                            td
+                             input( type='text',name='fname', value='#{Fname}' ,disabled='')
+                        tr
+                            th Last Name
+                            td
+                             input(type='text', name='lname',value='#{Lname}',disabled='' )
+                        tr
+                            th Gender
+                            td
+                             input(type='text',name='gender', value='#{Gender}', disabled='')
+                        tr
+                            th Date of Birth
+                            td
+                             input(type='text', name='dob',value='#{Dob}', disabled='')
+                        tr
+                            th Email
+                            td
+                             input(type='text', name='email',value='#{Email}', disabled='')
+                a#editb1.btn.btn-primary Edit 
+                button#save.btn.btn-primary(type='submit', name='save', value='1') Save
+
+      #contactdetails.col-sm-6(style='background-color: rgb(223, 221, 235);')
+        h4
+            u Contact information
+
+        form#usertable2.well.form-horizontal(action='/editsave', method='POST' target='_self')
+                   
+            table#usertable2.table.table-bordered
+                tbody
+                    tr
+                        th Mobile Phone 
+                        td
+                         input(type='text',name='mphone', value='#{Mphone}', disabled='')
+                    tr
+                        th Home Phone 
+                        td
+                         input(type='text',name='hphone', value='#{Hphone}', disabled='')
+                    tr
+                        th UnitNumber
+                        td
+                         input(type='text',name='unumber', value='#{UnitNo}', disabled='')
+                    tr
+                        th Address
+                        td
+                         input(type='text',name='address', value='#{Address}', disabled='')
+                    tr
+                        th City
+                        td
+                         input(type='text',name='city', value='#{City}', disabled='')
+                    tr
+                        th Postal Code
+                        td
+                         input(type='text',name='zip', value='#{Zip}', disabled='')
+              a#editb2.btn.btn-primary Edit 
+              button#save2.btn.btn-primary(type='submit', name='save', value='2') Save
+
+    #apodetails.container-fluid
+         .row.content
+          #appointmentdetails.col-sm-12(style='background-color: rgb(223, 221, 235);')
+            h4
+                u Appointment Details
+            br
+            form#usertable3.well.form-horizontal(action='/appointment', method='POST' target='_self')
+                table#usertable.table.table-bordered
+                    tbody
+                        tr
+                            th Department
+                            td
+                             .col-md-4.selectContainer
+                                .input-group
+                                 select#department.form-control.selectpicker(name='dept', onchange='sel()')
+                                    option(value='Department') Department
+                                    option(value='Anesthesiology') Anesthesiology
+                                    option Audiology
+                                    option Brest Care Clinic
+                                    option Cancer Care Center
+                                    option Diabets
+                                    option ENT
+                                    option General Surgery
+                                    option Neurology
+                                    option Ophtalmology
+                                    option Pediatrics
+                                    option Psychiatry
+                                    option Oncology
+                                    option Urology
+                        tr
+                            th Doctor [Select Department First]
+                            td
+                             .col-md-4.selectContainer
+                                #addDr.input-group
+                                 select#dr.form-control.selectpicker(name='dr', disabled='')
+                                    option(value='Doctor', selected='') Doctor
+                                    option
+                                    option
+                                    option
+                                    option
+                        tr
+                            th Date [Select Department & Doctor  first]
+                            td#adate
+                             input(type='date', name='dat',value='Peeter', disabled='')
+                        tr#atime
+                            th Time [Select Department & Doctor  first]
+                            td
+                             input(type='time',name='time', value='Peeter', disabled='')
+                button#sendrequest.btn.btn-primary(type='submit', name='request', value='3') Send Request
+            br
+            br
+

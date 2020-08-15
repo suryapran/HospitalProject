@@ -1,0 +1,117 @@
+extends layout
+
+block content
+        
+        // Department list and Details
+        .container-fluid
+         .row.content
+            .col-sm-3.text-left
+              h3 Department list
+              ul
+                li
+                    a Pediatrics
+                hr
+                li
+                    a Cancer Care Center
+                hr
+                li
+                    a Ophtalmology
+                hr
+                li
+                    a General Surgery
+                hr
+                li
+                     a Neurology
+                hr
+                li
+                    a Audiology
+                hr
+                li
+                    a Brest Care Clinic
+                hr
+                li
+                a ENT
+                hr
+                li
+                a Psychiatry
+                hr
+                li
+                    a Oncology
+                hr
+                li
+                    a Anesthesiology
+                hr
+                li
+                    a Diabets
+                hr
+                li
+                    a Ophtalmology
+                hr
+                li
+                    a Urology
+            .col-sm-9
+              .col-sm-8
+                    h3(style='text-align: left;') Pediatric Department
+                    img#pediatricimg1(src='images/pediatric/p5.jpg', alt='image1')
+                    h4(style='text-align: left;')   Childrens Doctor in Toronto
+                    p(style='text-align: left;')
+                    | The Department of Pediatrics at uniCare is committed to excellence in the clinical care of infants, children and adolescents. Our dedicated team of specialist pediatricians offers a wide range of clinical services and work closely with families to nurture their children to healthy individuals.
+              .col-sm-4.text-center
+                #drcarosolimg.carousel.slide(data-ride='carousel', style='width:100%;')
+                  // Indicators
+                  ol.carousel-indicators
+                    li.active(data-target='#myCarousel', data-slide-to='0')
+                    li(data-target='#myCarousel', data-slide-to='1')
+                    li(data-target='#myCarousel', data-slide-to='2')
+                    li(data-target='#myCarousel', data-slide-to='3')
+                    li(data-target='#myCarousel', data-slide-to='4')
+                    li(data-target='#myCarousel', data-slide-to='5')
+                    li(data-target='#myCarousel', data-slide-to='6')
+                  // Wrapper for slides
+                  .carousel-inner
+                    .item.active
+                        img#pediatricimg3(src='images/pediatric/d1.jpg', alt='image1')
+                        h4 Dr Lynda
+                    .item
+                        img#pediatricimg3(src='images/pediatric/d2.jpg', alt='image2')
+                        h4 Dr Priyanka
+                    .item
+                        img#pediatricimg3(src='images/pediatric/d3.jpg', alt='image2')
+                        h4 Dr George
+                    .item
+                        img#pediatricimg3(src='images/pediatric/d4.png', alt='image2')
+                        h4 Dr Mariya
+                  // Left and right controls
+                 a.left.carousel-control(href='#myCarousel', data-slide='prev')
+                    span.glyphicon.glyphicon-chevron-left
+                    span.sr-only Previous
+                 a.right.carousel-control(href='#myCarousel', data-slide='next')
+                    span.glyphicon.glyphicon-chevron-right
+                    span.sr-only Next
+            br
+            .col-sm-9
+                h3(style='text-align: left;') Services
+                img#pediatricimg4(src='images/pediatric/p3.jpg', alt='image1')
+                p(style='text-align: left;')
+                br
+                |                             Management of general pediatric problems
+                br
+                br
+                |                             Assessment of newborn babies
+                br
+                br
+                |                             Developmental screening and assessment of infants and toddlers
+                br
+                br
+                |                             Counseling for genetic disorders in children and arranging collaborative care
+                br
+                br
+                |                             Nutrition advice for infants, children and teens
+                br
+                br
+                |                             Evaluation, diagnosis and treatment of pediatric allergies
+                br
+                br
+                |                             Immunization for infants and children
+                br
+                br

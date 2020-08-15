@@ -1,0 +1,1110 @@
+
+/*************************************     MAIN          ******************************/
+ html,body{
+    margin: 0px;
+    padding: 0px;
+  }
+
+/**************logo***************/
+#navULitem img
+{
+width: 170px;
+height: 150px;
+margin-left: 130px;
+ 
+}
+
+
+/**************nav bar***************/
+.navbar
+{
+  margin-bottom: 0px;
+  border-radius: 0;
+  background-color: rgb(63, 18, 116);
+}
+#navULitem #items1
+{
+  padding-top: 5%;
+  margin-left: 100px;
+}
+#navULitem #items
+{
+  padding-top: 5%;
+  margin-left: 30px;
+}
+#navULitem li a
+{
+  font-size: 22px;
+  color: white;
+
+  
+}    
+
+#dropdwn li a
+{
+ color: blue;
+ font-size: 22px;
+ padding-left: 10px;
+}
+
+/********* top up department list *************/
+#departments
+{
+  margin-top: 190px;
+  margin-left: 300px;
+  padding-left: 10px;
+  padding-top: 30px;
+  width:800px ; 
+   height: 180px;
+  background-color:rgb(178, 193, 194) ;
+}
+
+
+/**************Hospital images***************/
+
+#carosolimg img
+{
+  margin-left: 10px;
+}
+
+/**************About Hospital ***************/
+
+#class1h1
+{
+ text-align: center;
+}
+
+#aboutdiv2 img
+{
+
+  width: 400px;
+  height: 300px;
+  margin-top: 50px;
+
+}
+/**************Contact ***************/
+
+#map1
+{ 
+  width: 600px;
+  height: 500px;
+ margin-top: 45px;
+ margin-left: 20px;
+
+}
+
+.form-horizontal .form-group
+{
+  margin-left: -60px;
+  margin-right: 160px;
+}
+ 
+.form-group #cosubmit
+{
+  text-align: center;
+}
+  .row.content {height: 450px}
+  
+  .sidenav {
+    padding-top: 20px;
+    background-color: #f1f1f1;
+    height: 100%;
+  }
+   /************************  Quick links *****************************/
+   #quicklinks
+   {
+     background-color: rgb(192, 192, 229);
+     height: 250px;
+     padding: 20px;
+   }
+
+
+#certificate img
+{
+  width: 150px;
+  height: 130px;
+}
+
+#quicklinks p
+{
+  font-size: 30px;
+}
+#quicklinks h4
+{
+  color: brown;
+}
+#qlist a
+{
+  color: black;
+}
+#quicklinks #arrow {
+  border-right:2px solid black;
+  border-bottom:2px solid black;
+  width:10px;
+  height:10px;
+  transform: rotate(-45deg);
+  margin-top:40px;
+}
+
+
+
+#quicklinks ul li {
+position: relative;
+padding-bottom: 10px;
+font-size: 18px;
+}
+
+#quicklinks ul {
+list-style: none;
+}
+
+#quicklinks ul li:before
+{
+  content: '';
+  position: absolute;
+  border-right:2px solid black;
+  border-bottom:2px solid black;
+  width:10px;
+  height:10px;
+  top: calc(50% - 4px);
+  left: -20px;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+#media .fa {
+  padding: 15px;
+  font-size: 30px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: rgb(85, 85, 172);
+  color:white;
+ 
+ 
+}
+a.fa.fa-facebook::before
+{
+  width: 20px;
+  height: 26px;
+}
+.fa-twitter {
+  background: rgb(85, 85, 172);
+  color:white;
+}
+
+.fa-linkedin {
+  background: rgb(85, 85, 172);
+  color:white;
+}
+
+.fa-youtube {
+  background: rgb(85, 85, 172);
+  color:white;
+}
+
+.fa-instagram {
+  background: rgb(85, 85, 172);
+  color:white;
+}
+
+#media img
+{
+  width: 200px;
+  height: 150px;
+  padding: 10px;
+}
+
+  /************************  footer *****************************/
+
+  footer {
+    background-color:rgb(63, 18, 116);
+    color: white;
+    padding: 15px;
+    text-align:center;
+  }
+  footer a:hover
+  {
+    background-color:#4c6dda;
+    color:yellow;
+  }
+
+  
+
+/**********************************             LOGIN            ************************/
+/***********    login img      **********/
+
+.banner1
+{
+  background-image: url("/images/Other/log1.jpg") ;
+  background-position: top;
+  background-repeat:no-repeat;
+  background-size: cover;
+  height: 700px;
+  width: 100%;
+ 
+  
+}
+
+#loginform
+{
+  background-color: rgba(0,0,0,0.4);
+  color: white;
+  width: 50%;
+  height: 300px;
+  margin-top: 150px;
+  margin-left: 350px;
+  text-align: center;
+  padding-top: 40px;
+  font-size: 20px;
+  
+}
+#loginform input
+{
+  font-size: 15px;
+  width: 350px;
+ 
+}
+#loginform #password
+{
+ 
+  margin-left: 7px;
+}
+  
+ /**********************************             APPOINTMENT            ************************/
+ #apointimg img
+ {
+   margin-left: 0px;
+   width: 100%;
+ }
+ #userdetails,#contactdetails
+ {
+   height:auto;
+   text-align: center;
+   border: gray;
+   border-width: 2px;
+   border-style: outset;
+ }
+ #usertable1,#usertable2,#usertable3
+ {
+  background-color: rgb(223, 221, 235);
+ }
+
+ #usertable1 input,#usertable2 input
+ {
+  width: 300px;
+ }
+ #appointmentdetails
+ {
+   height:auto;
+   text-align: center;
+   border: gray;
+   border-width: 2px;
+   border-style: outset;
+ 
+ }
+ #appointmentdetails th
+ {
+   width: 450px;
+ }
+ #appointmentdetails #adate ,#atime
+ {
+  text-align: left;
+
+ }
+
+ #appointmentdetails #adate input,#atime input
+ {
+ 
+  margin-left: 15px;
+ }
+ #apodetails
+ {
+    margin-top: 10px;
+ }
+ #hid1
+ {
+   text-align: left;
+   padding-left: 80px;
+   font-size: 15px;
+  font-weight: bold;
+ }
+ #save,#save2
+ {
+  margin-left: 50px;
+  background-color: green;
+ }
+
+ #usertable1form,#usertable2form
+ {
+   margin: 0px;
+   padding: 0px;
+ }
+ #usertable1form,#usertable2form
+ {
+  background-color: rgb(223, 221, 235);
+ }
+
+
+
+ /**********************************             HISTORY            ************************/
+#phis
+  {
+    background-color: rgb(223, 221, 235);
+  }
+  #phisdetails
+  {
+    text-align: center;
+    background-color: rgb(223, 221, 235);
+    
+
+  }
+  #phisdetails input
+  {
+    border-style: none;
+
+  }
+  #phusertable p,#phusertable h4
+  {
+    text-align: left;
+
+  }
+
+  
+  #exitb
+  {
+    margin-left: 650px;
+  }
+ #puserdetails,#pcontactdetails
+ {
+   height:auto;
+   text-align: center;
+
+   border-right: 6px solid gray;
+   border-width: 2px;
+
+   
+ }
+ #summerydetails
+ {
+   height:360px;
+   text-align: center;
+
+ 
+ }
+ #summery
+ {
+  height:auto;
+  text-align: center;
+
+  margin-top: 0px;
+}
+#summery1
+{
+  border-right: 6px solid gray;
+  border-width: 2px;
+  margin-top: 0px;
+;}
+#summery1table,#summery2table
+{
+  text-align: left;
+ 
+}
+#summery1table p,#summery2table p
+{
+  text-align: left;
+
+  width: 200px;
+}
+#summery1table textarea,#summery2table textarea
+{
+  border-style: none;
+  background-color:rgb(223, 221, 235) ;
+  border-image: none;
+  margin-left: 20px;
+  width: 300px;
+}
+
+
+#phis input
+{
+  
+  border-style: none;
+  background-color:rgb(223, 221, 235) ;
+  border-image: none;
+}
+#phishr
+{
+  
+  background-color:rgb(223, 221, 235) ;
+  margin: 0px;
+  padding: 0px;
+  
+}
+
+#phisdetailscon
+{
+ margin-top: 100px;
+}
+#h4summery
+{
+  margin-top: -80px;
+  margin-bottom: 10px;
+}
+
+ /**********************************     CONSULTATION            ************************/
+ #consult,#consultestresult,#details
+  {
+    background-color: rgb(223, 221, 235);
+  }
+
+ #consultdetails
+ {
+   height:auto;
+   text-align: center;
+
+  border-right: 6px solid gray;
+  border-width: 2px;
+ }
+
+ #consulttable input ,textarea
+ {
+  text-align: left;
+  width: 300px;
+ }
+ #consulttable #cphid
+ {
+  text-align: left;
+  width: 230px;
+ }
+ #consulttable select
+ {
+  
+  width: 300px;
+  margin-left: 70px;
+ }
+
+ #consultestresult select,#consultestresult input
+ {
+  text-align: left;
+  width: 250px;
+  margin-left: 10px;
+ }
+#cresult input
+ {
+   margin-left: 10px;
+ }
+
+    #cuserdetails
+ {
+   height:auto;
+   text-align: center;
+   border: gray;
+
+ }
+ /**********************************     PEDIATRICS            ************************/
+
+ #pediatricimg1,#pediatricimg2
+ {
+   width: 500px;
+   height: 200px;
+
+ }
+ #pediatricimg3
+ {
+   
+   width: 200px;
+   height: auto;
+   margin-left: 3.3em;
+
+ }
+ #pediatricimg4,#pediatricimg5
+ {
+   width: 600px;
+   height: 200px;
+
+ }
+ #drcarosolimg 
+{
+  margin-top: 100px;
+
+}
+/**********************************     NEW CLIENT            ************************/
+#duperror,#loginerror
+{
+color: red;
+margin-left: 100px;
+text-align: center;
+}
+#newform .form-group
+{
+ 
+ margin-left: 30px;
+ margin-right: 0px;
+}
+#newform input
+{
+  width: 400px;
+}
+#newform #checkstaff
+{
+  margin-left: 10px;
+  width: 80px;
+}
+#newform #gender
+{
+ 
+  width: 22px;
+
+}
+
+/************************                MEDIA QUERY  768  ***********************************************************/
+
+@media screen and (max-width: 768px)
+{
+      .row.content {height:auto;}
+        /***** logo *******/
+        #navULitem img
+      {  
+        width: 130px;
+        height: 110px;
+        margin-left: 0px;
+      
+      }
+
+
+
+        /***** nav bar *******/
+        #navULitem #items1
+      { padding-top: 6%;
+        margin-left: 22px;
+       
+      }
+      #navULitem #items
+      { padding-top: 6%;
+        margin-left: 0px;
+        
+      }
+      #navULitem li a
+      {
+        font-size: 17px; 
+        padding: 10px 10px 10px 17px;
+      
+      } 
+      .nav li a
+      {
+        padding-top: 20px;
+      }
+      /*****topup department **********/
+      #departments
+      {
+        margin-top: 190px;
+        margin-left: 40px;
+        padding-left: 0px;
+        padding-top: 30px;
+        width:680px ; 
+        height: 180px;
+        background-color:rgb(178, 193, 194) ;
+      }
+    
+
+
+      /*****carosolimg*****/
+
+    
+  /**************About Hospital ***************/
+
+      #aboutdiv2 img
+      {
+
+      width:230px;
+      height: 180px;
+      margin-top: 50px;
+      margin-right: 50px;
+
+    }
+      /**************Contact ***************/
+
+      
+      
+      #map1
+      { 
+        width: 340px;
+        height: 350px;
+      margin-top: 120px;
+      margin-left: 20px;
+
+      }
+
+      .form-horizontal .form-group
+      {
+        margin-left: 2px;
+        margin-right: 0px;
+      }
+
+      /**quick links**********/
+   
+      #quicklinks h4
+      {
+        padding-left: 0px;
+       }
+      #quicklinks ul li
+       {
+          font-size: 15px;
+        }
+
+       
+        #media .fa {
+          padding:8px;
+          font-size: 16px;
+          width: 32px;
+              
+        }
+
+        #certificate img
+        {
+          width: 100px;
+          height: 80px;
+        }
+
+      body
+      {
+        line-height: 20px;
+      }
+
+      /**************Login page *************************************/
+      .banner1
+        {
+       
+          height: 600px;
+      
+        
+          
+        }
+      #loginform
+      {
+      
+        width: 60%;
+        height: 320px;
+        margin-left: 150px;
+      
+      }
+      #loginform input
+      {
+        font-size: 15px;
+        width: 200px;
+      
+      }
+       /**************New client *************************************/
+       #newform input
+       {
+         width: 100%;
+       }
+      /*****************     CONSULTATION  page    ****************************/
+
+      #hid input
+      {
+        margin-left: 0px;
+        width: 120px;
+      }
+      
+      #consulttable input ,textarea
+      {
+      
+        width: 180px;
+      }
+      #consulttable select
+      {
+        
+        width: 180px;
+        margin-left: 0px;
+      }
+      #cresult input
+      {
+        margin-left: 0px;
+      }
+
+      #cuserdetails td
+      {
+        width: 180px;
+        margin-left: 0px;
+      }
+      /*****************     phistory  page    ****************************/
+      #exitb
+      {
+        margin-left: 360px;
+      }
+      #summery1table input
+      {
+        margin-left: 0px;
+        width: 200px;
+      }
+      #summery2table input
+      {
+        margin-left: 0px;
+        width: 200px;
+      }
+      #summery2table textarea
+      {
+        margin-left: 0px;
+        width: 200px;
+      }
+      #summery1table textarea
+      {
+        margin-left: 0px;
+        width: 200px;
+      }
+      #summery
+      {
+        margin-top: 20px;
+      }
+      #h4summery
+      {
+        margin-top: 20px;
+        
+      }
+
+
+      /*****************     pediatric  page    ****************************/
+      #pediatricimg1,#pediatricimg2
+      {
+        width: 300px;
+        height: 200px;
+
+      }
+      #pediatricimg3
+      {
+        width: 150px;
+        height: 150px;
+
+      }
+      #pediatricimg4,#pediatricimg5
+      {
+        width: 400px;
+        height: 200px;
+
+      }
+      #drcarosolimg img
+      {
+        margin-left: .1em;
+      }
+
+      /*****************     Appointmrnt  page    ****************************/
+      #hid1
+      {
+        
+        padding-left: 20px;
+      }
+      #usertable1 input,#usertable2 input
+      {
+       width: 200px;
+      }
+     
+
+}
+
+
+
+
+
+
+
+/************************  MEDIA QUERY 414 ***********************************************************/
+
+@media screen and (max-width: 414px)
+{
+
+  .row.content {height:auto;} 
+   /*********logo*********/
+   #navULitem img
+   {
+   width: 130px;
+   height: 110px;
+  
+   }
+
+   /***** nav bar *******/
+   #navULitem li a
+   {
+     font-size: 22px; 
+     padding: 10px 10px 10px 17px;
+   
+   }
+
+   #navULitem #items1
+   {
+     padding-top: 1%;
+     margin-left: 20px;
+     
+   }
+   #navULitem #items
+   {
+     padding-top: 1%;
+     margin-left: 20px;
+    
+   }
+   #dropdwn li a
+    {
+    color: white;
+    padding-left: 50px;
+ 
+    }
+    /* department list navbar */
+    #departments
+      {
+       margin-top: 10px;
+        margin-left: 0px;
+        padding-left: 10px;
+        padding-top: 30px;
+        width:250px ;
+        height:36em;
+        background-color:rgb(178, 193, 194) ;
+      }
+    /**************About Hospital ***************/
+  
+    #aboutdiv2 img
+    {
+
+    width:280px;
+    height: 200px;
+    margin-top: 10px;
+    margin-right: 50px;
+    margin-left: 27px;
+
+  }
+/**************Contact ***************/
+   
+    #map1
+    { 
+      width: 330px;
+      height: 300px;
+    margin-top: 20px;
+    margin-left: 15px;
+
+    }
+    /**************Login page *************************************/
+#loginform
+{
+ 
+  width: 100%;
+  height: 320px;
+
+  margin-left: 0px;
+
+  
+}
+
+  /**************New client *************************************/
+  #newform .form-group
+  {
+  
+  margin-left: 0px;
+  margin-right: 0px;
+  }
+  #newform input
+  {
+    width: 100%;
+    
+  }
+
+    /**************Appoinment page **********************************/
+    #apointimg img
+    {
+      margin-left: 0px;
+    }
+    #userdetails,#contactdetails
+    {
+      width: 358px;
+    }
+    #appointmentdetails
+    {
+         width: 358px;
+     
+    }
+        #appointmentdetails th
+        {
+          width: 140px;
+        }
+        #apodetails
+        {
+            margin-top: 0px;
+        }
+  /**************PHistory page **********************************/
+  #exitb
+  {
+    margin-left: 160px;
+  }
+  #summery1table input
+      {
+        margin-left: 0px;
+        width: 200px;
+      }
+      #summery2table input
+      {
+        margin-left: 0px;
+        width: 200px;
+      }
+      #summery2table textarea
+      {
+        margin-left: 0px;
+        width: 200px;
+      }
+      #summery1table textarea
+      {
+        margin-left: 0px;
+        width: 200px;
+      }
+      #summery
+      {
+        margin-top: 25px;
+      }
+      #h4summery
+      {
+        margin-top: 10px;
+        margin-bottom: 0px;
+      }
+        
+        
+   /**************Consultation page **********************************/
+
+      #class2h1
+      {
+          font-size: 30px;
+      }
+
+    /*****************     pediatric  page    ****************************/
+#pediatricimg1,#pediatricimg2
+{
+  width: 300px;
+  height: 200px;
+
+}
+#pediatricimg3
+{
+  width: 180px;
+  height: 150px;
+
+}
+#pediatricimg4,#pediatricimg5
+{
+  width: 320px;
+  height: 200px;
+
+}
+#drcarosolimg img
+{
+  margin-top: 20px;
+  margin-left: 4.5em;
+}
+
+
+    /**************quick link ***************/
+ 
+    #quicklinks
+    {
+    
+      height: auto;
+      padding: 20px;
+    }
+    #certificate ,#media
+    {
+      text-align: left;
+    }
+    #certificate img
+    {
+      width: 130px;
+      height: 110px;
+    }
+    #media .fa {
+     
+      font-size: 20px;
+      width: 40px;
+         
+    }
+    
+   
+
+  }
+  
+
+
+
+
+
+
+/* boostrap navbar hover */
+/* stroke */
+
+
+/*fill */
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+ 
+  
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0; 
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: yellow;
+  height: 1px;
+  
+  
+}
+
+nav.fill ul li a {
+  transition: all .1s;
+   
+}
+
+nav.fill ul li a:after {
+  text-align: left; 
+   content: '.'; 
+   margin: 0;
+   opacity: 0; 
+   
+
+}
+nav.fill ul li a:hover {
+  color: white;
+  z-index: 3;
+  
+}
+nav.fill ul li a:hover:after {
+  width: 100%;
+  z-index: -10;
+  animation: fill 1s forwards;
+  opacity: 1;
+  
+ 
+}
+/* Keyframes */
+@-webkit-keyframes fill {
+  0% {
+    width: 0%;
+    height: 1px;
+  }
+  50% {
+    width: 100%;
+    height: 1px;
+  }
+ 
+}
+
+

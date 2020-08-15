@@ -1,0 +1,221 @@
+extends layout
+
+block content 
+        //- Patient and contact information div
+        #phis
+            #detailstop
+                h1.text-center Patient History
+            br
+            hr
+            #details.container-fluid
+             .row.content
+                #puserdetails.col-sm-6
+                    h4
+                        u Patient information
+                    br
+                    table#phusertable.table.table-bordered
+                        tbody
+                            tr
+                                th Hospital ID
+                                td
+                                  h4 #{Result1[0].HID}
+                                   
+                            tr
+                                th First Name
+                                td
+                                  p #{Result1[0].Fname}
+                            tr
+                                th Last Name
+                                td
+                                    p #{Result1[0].Lname}
+                            tr
+                                th Gender
+                                td
+                                   p #{Result1[0].Gender}
+                            tr
+                                th Date of Birth
+                                td
+                                   p #{Result1[0].Dob}
+                #pcontactdetails.col-sm-6
+                        h4
+                            u Contact information
+                        br
+                        table#phusertable.table.table-bordered
+                            tbody
+                            tr
+                                th Mobile Phone 
+                                td
+                                 p #{Result1[0].Mphone}
+                            tr
+                                th Home Phone 
+                                td
+                                 p #{Result1[0].Hphone}
+                            tr
+                                th Email
+                                td
+                                 p #{Result1[0].Email}
+                            tr
+                                th Address
+                                td
+                                 p #{Result1[0].Address}
+                            tr
+                                th Postal Code
+                                td
+                                 p #{Result1[0].Zip}
+               
+               h4#h4summery.text-center
+                    u Hospital Summery
+             -var t1 = 1
+                       
+            - for(var i = 0; i<Clength;  ) {
+                  hr#phishr
+                #phisdetails.container-fluid
+                  #summery.row.content
+
+                    #sumery1.col-sm-6
+                      table#summery1table.table.table-bordered
+                            tbody
+
+                                if(i < Clength)
+                                    tr
+                                        th Consulting No
+                                        td
+                                            p #{t1}
+                                    tr
+                                        th Consulting Date
+                                        td
+                                            p #{Result2[i].Date}
+                                    tr
+                                        th Consulting Doctor
+                                        td
+                                            p #{Result2[i].Doctor}
+                                    tr
+                                        th Department
+                                        td
+                                            p #{Result2[i].Department}
+                                    tr
+                                        th Details of illness
+                                        td
+                                             p #{Result2[i].Illness}
+                                    tr
+                                        th Treatment
+                                        td
+                                            p #{Result2[i].Treatment}
+                                    tr
+                                        th Medicine
+                                        td
+                                            p #{Result2[i].Medicine} 
+                    #summery1.col-sm-6
+                      table#summery2table.table.table-bordered
+                         tbody
+                              -  i = i + 1
+                              -t1 = t1 + 1
+                              if (i< Clength)
+                                    tr
+                                        th Consulting No
+                                        td
+                                            p #{t1}
+                                    tr
+                                        th Consulting Date
+                                        td
+                                            p #{Result2[i].Date}
+                                    tr
+                                        th Consulting Doctor
+                                        td
+                                            p #{Result2[i].Doctor}
+                                    tr
+                                        th Department
+                                        td
+                                            p #{Result2[i].Department}
+                                    tr
+                                        th Details of illness
+                                        td
+                                             p #{Result2[i].Illness}
+                                    tr
+                                        th Treatment
+                                        td
+                                            p #{Result2[i].Treatment}
+                                    tr
+                                        th Medicine
+                                        td
+                                            p #{Result2[i].Medicine}                         
+                      - i = i + 1
+                      -t1 = t1 + 1                     
+                                     
+                      
+           -} 
+                br
+                br
+                hr
+              h4#h4summery.text-center
+                    u Test and Result
+             -var t = 1
+             -var k = 0                   
+            - for(var j = 0; j < Tlength; ){
+                hr#phishr
+               #phisdetails.container-fluid
+                 #summery.row.content
+                    #summery1.col-sm-6
+                      table#summery1table.table.table-bordered
+                         tbody
+                                 if (j<Tlength)
+                                    tr
+                                        th Test No
+                                        td
+                                            p #{t}
+                                    tr
+                                        th HID
+                                        td
+                                            p #{Result3[j].HID}
+                                    tr
+                                        th Test Date
+                                        td
+                                            p #{Result3[j].Date}
+                                    tr
+                                        th Test 
+                                        td
+                                            p #{Result3[j].Test}        
+                                     tr
+                                        th Result 
+                                        td
+                                            p #{Result3[j].Result} 
+                    #summery1.col-sm-6
+                       table#summery2table.table.table-bordered
+                         tbody
+                              -  j = j + 1
+                              -t = t + 1
+                              if (j<Tlength)
+                                tr
+                                        th Test No
+                                        td
+                                            p #{t}
+                                tr
+                                        th HID
+                                        td
+                                            p #{Result3[j].HID} 
+                                tr
+                                        th Test Date
+                                        td
+                                            p #{Result3[j].Date}
+                                tr
+                                        th Test 
+                                        td
+                                            p #{Result3[j].Test}        
+                                tr
+                                        th Result 
+                                        td
+                                            p #{Result3[j].Result}
+                         -  j = j + 1 
+                         -t = t + 1 
+            - }           
+  
+            hr 
+            br                    
+          
+            a#exitb.btn.btn-primary(href='/logout') Exit
+-       
+
+
+
+
+    

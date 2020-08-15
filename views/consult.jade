@@ -1,0 +1,88 @@
+extends layout
+
+block content 
+        // Consultation details of Patient
+        #consult
+            #detailstop
+             h1#class2h1.text-center Enter Consultation Details
+            br
+            br
+            hr
+            .container-fluid
+             .row.content
+                #consultdetails.col-sm-6(style='background-color: rgb(223, 221, 235);')
+                    h4
+                        u Consultation Details
+                    form#details.well.form-horizontal(action='/details', method='POST' target='_self')   
+                        h4 Patient Hospital ID
+                         input#cphid(type='text', name="hid",value='#{Hid}')
+                         button#show.btn.btn-primary(type='submit') Details
+                    form#details.well.form-horizontal(action='/consult', method='POST' target='_self')   
+                    
+                        table#consulttable.table.table-bordered
+                         tbody
+                            tr
+                             th Consulted Doctor Name
+                             td
+                                input(type='text', value='',name='drname')
+                            tr
+                             th Department
+                             td
+                                input(type='text',name='dept')
+                            tr
+                             th Details of illness
+                             td
+                                textarea(name='illness')
+                            tr
+                             th Treatment
+                             td
+                                textarea(name='treatment')
+                            tr
+                             th Medicine
+                             td
+                                textarea(name='medicine')
+                            tr
+                             th Date
+                             td#cdate
+                                input(type='date',name='dat')
+                    
+                        button#done.btn.btn-primary(type='submit') Done
+                        br
+                        br
+                #cuserdetails.col-sm-6(style='background-color: rgb(223, 221, 235);')
+                    h4
+                        u Patient information
+                    table#usertable.table.table-bordered
+                    
+                        tbody
+                        tr
+                            th First Name
+                            td
+                                input#cfname(type='text', disabled='',value='#{Fname}')
+                        tr
+                            th Last Name
+                            td
+                                input#clname(type='text', disabled='',value='#{Lname}')
+                        tr
+                            th Gender
+                            td
+                                input#cgender(type='text', disabled='',value='#{Gender}')
+                        tr
+                            th Age
+                            td
+                                input#cage(type='text', disabled='',value='#{Age}')
+                    a.btn.btn-primary(href='/phistory', target='_blank') Patient History
+                    br
+                    br
+                    a#addrow1.btn.btn-primary Add Test & Rsult
+                    form#details.well.form-horizontal(action='/testresult', method='POST' target='_self')   
+                    
+                        table#consultestresult.table.table-bordered
+                         tbody
+                            
+                        
+                        br
+                        br
+                    br
+                    br
+hr

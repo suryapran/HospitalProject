@@ -1,0 +1,25 @@
+extends layout
+
+block content 
+        //- h1 welcome to login
+        
+        #loginimage.container-fluid.banner1
+          #loginform
+            p#loginerror #{loginerror}
+            form.form(action='/login', method='POST', target='_self')
+                label Hospital ID
+                input#uname(name='loginhid', type='text', placeholder='Hospital ID', style='color: black;')
+                br
+                br
+                label Password
+                input#password(name='loginpass', type='password', placeholder='Password', style='color: black;')
+                br
+                br
+                button#loginb.btn.btn-success(type='submit', name='login') Log in
+            br
+            p
+              a(href='', style='color: red;') Forgot Password
+            p
+             | For a New Client 
+             a(href='newclient', style='color: blue;')  Click
+             |            to create an account
